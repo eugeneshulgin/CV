@@ -11,7 +11,7 @@ a {
 }
 
 body {
-	background: linear-gradient(to bottom right, rgb(213, 140, 111), rgb(208, 113, 75));
+	background: linear-gradient(to bottom right, rgb(94, 94, 94), rgb(177, 177, 177));
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -19,21 +19,22 @@ body {
 }
 
 .wrapper {
-	border: 2px solid rgb(187, 187, 187);
-	background-color: aliceblue;
-	margin: 50px 0 50px 0;
-	box-shadow: 8px 8px 3px rgb(214, 214, 214);
+	border: 2px solid rgb(47, 47, 47);
+	background-color: rgb(255, 255, 255);
+	margin: 50px 0px 50px 0px;
+	box-shadow: 8px 8px 3px rgb(48, 48, 48);
 }
 
 .container {
 	width: 1200px;
+	margin: 50px;
 }
 
 .top {
 	display: grid;
 	grid-template-columns: 1fr 2fr;
 	padding: 70px 100px 50px 100px;
-	background-color: rgb(227, 217, 209);
+	background-color: rgb(255, 255, 255);
 }
 
 .box {
@@ -76,8 +77,8 @@ img {
 .contentBox {
 	display: grid;
 	grid-template-columns: 1fr 2fr;
-	background-color: rgb(195, 163, 152);
-	padding: 20px 10px 100px 50px;
+	background-color: rgb(255, 255, 255);
+	padding: 20px 0 100px 0;
 }
 
 .leftSide h3,
