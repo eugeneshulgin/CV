@@ -5,14 +5,24 @@
 	list-style: none;
 }
 
-body {}
+a {
+	text-decoration: none;
+	color: #000;
+}
 
-.wrapper {
-	background-color: rgb(211, 212, 213);
+body {
+	background: linear-gradient(to bottom right, rgb(213, 140, 111), rgb(208, 113, 75));
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
+}
+
+.wrapper {
+	border: 2px solid rgb(187, 187, 187);
+	background-color: aliceblue;
+	margin: 50px 0 50px 0;
+	box-shadow: 8px 8px 3px rgb(214, 214, 214);
 }
 
 .container {
@@ -22,13 +32,13 @@ body {}
 .top {
 	display: grid;
 	grid-template-columns: 1fr 2fr;
-	background-color: aliceblue;
-	padding: 100px 10px 100px 100px;
+	padding: 70px 100px 50px 100px;
+	background-color: rgb(227, 217, 209);
 }
 
 .box {
-	width: 200px;
-	height: 200px;
+	width: 250px;
+	height: 250px;
 	overflow: hidden;
 	position: relative;
 	border-radius: 100%;
@@ -46,36 +56,98 @@ img {
 .profileText {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-around;
 
 }
 
 .profileText h3 {
+	text-align: center;
 	font-size: 70px;
 	font-weight: 500;
 }
 
 .profileText div {
+	text-align: center;
 	font-size: 35px;
 	font-weight: 100;
 
 }
 
 .contentBox {
-	background-color: aliceblue;
-	padding: 0px 10px 100px 50px;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	background-color: rgb(195, 163, 152);
+	padding: 20px 10px 100px 50px;
 }
 
-.leftSide span {
+.leftSide h3,
+.rightSide h3 {
+	display: inline-block;
 	background-color: black;
 	color: #fff;
-	font-size: 20px;
+	font-size: 15px;
 	text-transform: uppercase;
-	padding: 5px;
+	padding: 5px 10px 5px 10px;
 	font-weight: 100;
+	margin-bottom: 15px;
 }
 
-.contact,
-.contact div {
-	padding: 10px;
+
+.contactsBox {
+	padding: 5px;
+	display: flex;
+	justify-content: start;
+}
+
+.icon {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	overflow: hidden;
+	position: relative;
+	border-radius: 100%;
+}
+
+.icon img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.contactsInfo {
+	padding-left: 5px;
+}
+
+.contacts,
+.language,
+.interest,
+.about {
+	padding-bottom: 20px;
+}
+
+.languageList li {
+	display: flex;
+	flex-direction: column;
+}
+
+.line {
+	position: relative;
+	width: 80%;
+	background: #e3e3e3;
+	height: 6px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	display: block;
+	overflow: hidden;
+}
+
+.line div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: rgb(47, 47, 47);
 }
